@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>infologistix FreitagsAkademie</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="./dist/reveal.css">
+    <link rel="stylesheet" href="./dist/theme/infologistix.css" id="theme">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h3 class="r-fit-text">Freitags-Akademie</h3>
+                <h3>Software Development</h3>
+                <p><a href="https://infologistix.de" target="_blank">@infologistix</a></p>
+                <aside class="notes">
+                    Shhh, these are your private notes 📝
+                </aside>
+            </section>
+            <section id="work">
+                <h3 style="top: 0;">Inhalt</h3>
+                <div class="r-stretch">
+                    <div class="d-flex flex-column justify-content-around w-100 h-100">
+                        <div class="fragment">
+                            <a href="#scm">
+                                <div style="text-align: left;">
+                                    Source Control Management
+                                </div>
+                            </a>
+                            <hr>
+                            <div class="d-flex justify-content-end fs-5">
+                                <div class="mx-5">GitHub</div>
+                                <div class="mx-5">Account & Berechtigungen</div>
+                                <div class="mx-5">GIT Commands</div>
+                            </div>
+                        </div>
+
+                        <div class="fragment">
+                            <a href="#ide">
+                                <div style="text-align: left;">
+                                    Integrated Development Environment
+                                </div>
+                            </a>
+                            <hr>
+                            <div class="d-flex justify-content-end fs-5">
+                                <div class="mx-5">Editoren</div>
+                                <div class="mx-5">Visual Studio Code</div>
+                                <div class="mx-5">Quickstart</div>
+                            </div>
+                        </div>
+                        <div class="fragment">
+                            <a href="#software">
+                                <div style="text-align: left;">
+                                    Software
+                                </div>
+                            </a>
+                            <hr>
+                            <div class="d-flex justify-content-end fs-5">
+                                <div class="mx-5">Sprachen</div>
+                                <div class="mx-5">Principals</div>
+                                <div class="mx-5">Design Guidelines</div>
+                            </div>
+                        </div> 
+                        <div class="fragment">
+                            <a href="#diy">
+                                <div style="text-align: left;">
+                                    DIY
+                                </div>
+                            </a>
+                            <hr>
+                            <div class="d-flex justify-content-end fs-5">
+                                <div class="mx-5">Hackathon</div>
+                                <div class="mx-5">Tips & Tricks</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="scm">
+                <section>
+                    <h2>Source Control Management</h2>
+                </section>
+                <section>
+                    <h3>Allgemeines</h3>
+                    <div style="text-align: left">
+                        <p>
+                            Source Control Management = <br>
+                            Management des Quellcodes / Versionsverwaltung
+                        </p>
+                        <p>
+                            Normierter Vorgang des Archivieren/Speichern von Quellcode
+                        </p>
+                        <p>
+                            Aufteilung in:
+                            <ul>
+                                <li>Repositories</li>
+                                <li>Branches</li>
+                                <li>Commits</li>
+                                <li>Tags</li>
+                            </ul><br>
+                            Dabei gilt: Top-Down Mechanismus
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <h3>Anbieter</h3>
+                    <div class="r-hstack r-stretch">
+                        <div class="m-2 bg-secondary p-5 h-100" style="text-align: left">
+                            <img style="width:100%"
+                                src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Emblem.png">
+                            Microsoft<br>
+                            <hr>2008<br>
+                            <hr>Populärster Wettbewerber
+                        </div>
+                        <div class="m-2 bg-secondary p-5 h-100" style="text-align: left">
+                            <img style="width:100%"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/GitLab_logo.svg/2560px-GitLab_logo.svg.png">
+                            GitLab Inc.<br>
+                            <hr>2012<br>
+                            <hr>Open Source
+                        </div>
+                        <div class="m-2 bg-secondary p-5 h-100" style="text-align: left">
+                            <img style="width:100%"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Logo_gitee_light.svg/2560px-Logo_gitee_light.svg.png">
+                            AOSI-Network<br>
+                            <hr>Markt: China
+                        </div>
+                        <div class="m-2 bg-secondary p-5 h-100" style="text-align: left">
+                            <img style="width:100%"
+                                src="https://download.logo.wine/logo/Bitbucket/Bitbucket-Logo.wine.png">
+                            Atlassian<br>
+                            <hr>2008<br>
+                            <hr>Für Unternehmen
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    GitHub Account und Berechtigungen
+                    <div class="r-hstack">
+                        <div>Some Picture</div>
+                        <div class="card">
+                            <div class="card-body text-dark">
+                                <ul>
+                                    <li>Jeder Nutzer ist auf alle Projekte Schreibberechtigt</li>
+                                    <li>Maintenance erfolgt über den Ersteller eines Repositories</li>
+                                    <li>be aware: Mit dem Link zur infologistix ist euer Konto mit dem offiziellen
+                                        infolgoistix Accoutn verknüpft</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Beispielprojekte</h3>
+                    <ul>
+                        <li>Docker Build Pipeline</li>
+                        <li>WebCrawler</li>
+                        <li>TDWI-Image-Engine</li>
+                        <li>FC Bayern München</li>
+                        <li>BIKK-Übungen</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>GIT Commands</h3>
+                    <div class="r-vstack r-stretch p-2">
+                        <div class="r-hstack">
+                            <button class="btn btn-dark m-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#clone" aria-expanded="false" aria-controls="collapseExample">
+                                clone
+                            </button>
+                            <button class="btn btn-dark m-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#pull" aria-expanded="false" aria-controls="collapseExample">
+                                pull/push
+                            </button>
+                            <button class="btn btn-dark m-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#fetch" aria-expanded="false" aria-controls="collapseExample">
+                                fetch
+                            </button>
+                            <button class="btn btn-dark m-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#add" aria-expanded="false" aria-controls="collapseExample">
+                                add
+                            </button>
+                            <button class="btn btn-dark m-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#commit" aria-expanded="false" aria-controls="collapseExample">
+                                commit
+                            </button>
+                            <button class="btn btn-dark m-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#branch" aria-expanded="false" aria-controls="collapseExample">
+                                branch
+                            </button>
+                            <button class="btn btn-dark m-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#init" aria-expanded="false" aria-controls="collapseExample">
+                                init
+                            </button>
+                            <button class="btn btn-dark m-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#switch" aria-expanded="false" aria-controls="collapseExample">
+                                switch
+                            </button>
+                        </div>
+                        <div class="r-stack mt-5 w-100" id="collapseItems">
+                            <div class="collapse w-100" id="clone" data-bs-parent="#collapseItems">
+                                <div class="card card-body text-black">
+                                    <pre class="bash"><code data-trim data-noescape>
+$ git clone repository-url [folder]
+                                        </code></pre>
+                                    Klonen eines Remote Repositories nach lokal. Optional kann ein Zielordner angegeben
+                                    werden.
+                                </div>
+                            </div>
+                            <div class="collapse" id="pull" data-bs-parent="#collapseItems">
+                                <div class="card card-body text-black">
+                                    <pre class="bash"><code data-trim data-noescape>
+$ git pull
+$ git push
+                                        </code></pre>
+                                    Holen des aktuellen Stands eines Remote Repositories. Dateien werden lokal
+                                    aktualisiert<br>
+                                    Pushen des lokalen Repositories nach Remote (Sicherung)
+                                </div>
+                            </div>
+                            <div class="collapse" id="fetch" data-bs-parent="#collapseItems">
+                                <div class="card card-body text-black">
+                                    <pre class="bash"><code data-trim data-noescape>
+$ git fetch
+                                        </code></pre>
+                                    Holen des aktuellen Stands eines Remote Repositories. Lokale Dateien werden nicht
+                                    aktualisiert
+                                </div>
+                            </div>
+                            <div class="collapse" id="add" data-bs-parent="#collapseItems">
+                                <div class="card card-body text-black">
+                                    <pre class="bash"><code data-trim data-noescape>
+$ git add [file/folder]
+$ git add ./source
+                                        </code></pre>
+                                    Hinzufügen von ungetrackten Dateien in das Staging (Vorbereitung für das Tracking)
+                                </div>
+                            </div>
+                            <div class="collapse" id="commit" data-bs-parent="#collapseItems">
+                                <div class="card card-body text-black">
+                                    <pre class="bash"><code data-trim data-noescape>
+$ git commit -m "commit-message"
+                                        </code></pre>
+                                    Mit diesem Befehl werden hinzugefügte/getrackte Dateien aus dem Staging dem
+                                    Repository hinzugefügt
+                                </div>
+                            </div>
+                            <div class="collapse" id="branch" data-bs-parent="#collapseItems">
+                                <div class="card card-body text-black">
+                                    <pre class="bash"><code data-trim data-noescape>
+$ git branch
+$ git branch -c feature/newFeature
+                                        </code></pre>
+                                    Listen der Branches<br>
+                                    Erstellen eines neuen Branches auf Basis des aktuellen Branches
+                                </div>
+                            </div>
+                            <div class="collapse" id="init" data-bs-parent="#collapseItems">
+                                <div class="card card-body text-black">
+                                    <pre class="bash"><code data-trim data-noescape>
+$ git init 
+                                        </code></pre>
+                                    Initiieren eines neuen Git-Repositories im aktuellen Ordner
+                                </div>
+                            </div>
+                            <div class="collapse" id="switch" data-bs-parent="#collapseItems">
+                                <div class="card card-body text-black">
+                                    <pre class="bash"><code data-trim data-noescape>
+$ git switch branchName
+                                        </code></pre>
+                                    Wechseln des Branchs im aktuellen Repository. Ermöglicht das parallele Arbeiten an
+                                    mehreren Features oder Softwareständen
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section id="ide">
+                <section>
+                    <h2>Code Editors</h2>
+                    <div>[I]ntegrated [D]evelopment [E]nvironment</div>
+                </section>
+                <section>
+                    <h3>Infologistix Standard IDE</h3>
+                    <img class="r-stretch" src="https://code.visualstudio.com/opengraphimg/opengraph-home.png">
+                    <p>Visual Studio Code <a href="https://code.visualstudio.com"
+                            target="_blank">Documentation/Download</a></p>
+                </section>
+                <section>
+                    <h3>VsCode Quickview</h3>
+                    <img src="https://code.visualstudio.com/assets/docs/getstarted/userinterface/hero.png" alt="VSCode"
+                        class="r-stretch">
+                </section>
+                <section>
+                    <h3>VsCode Quickview</h3>
+                    <p>Top Used Extensions</p>
+                    <img src="assets/extensions.png" alt="VSCode" class="r-stretch">
+                    <div>
+                        Weitere sind u.a.: GO, Docker, Kubernetes, RedHat-YAML, MSSQL, Angular, Vue.js, ...
+                    </div>
+                </section>
+            </section>
+            <section id="software">
+                <section>
+                    <h2>Software Development</h2>
+                </section>
+                <section>
+                    <h3>Konzepte</h3>
+                    <div class="r-vstack w-100">
+                        <div class="card bg-secondary w-100 m-2">
+                            <div class="card-header">
+                                Data Based Software
+                            </div>
+                            <div class="card-text fs-4" style="text-align: left">
+                                <ul>
+                                    <li>Micro-ETL Services (SQL-Frameworks)</li>
+                                    <li>Web-Dashboarding</li>
+                                    <li>Plugin-Development für Data Suites</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card bg-secondary w-100 m-2">
+                            <div class="card-header">
+                                Cloud-Integration & Cloud-Perfomance
+                            </div>
+                            <div class="card-text fs-4" style="text-align: left">
+                                <ul>
+                                    <li>Containerisierte Anwendungen</li>
+                                    <li>Cloud-Native Untersützung von bestehenden Anwendungen</li>
+                                    <li>Frameworks für Small Data (z.B. IoT-Stack)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Sprachen</h3>
+                    <img src="https://miro.medium.com/max/820/0*oyD7ekV-hMU91h4J.png" clas="r-stretch">
+                    <div class="fs-4">
+                        Best to learn 2023
+                        <hr>
+                        <div class="d-flex w-100 justify-content-between">
+                            <div style="text-align: left">
+                                1. Javascript <br>
+                                2. Python <br>
+                                3. Go
+                            </div>
+                            <div style="text-align: left">
+                                4. Java<br>
+                                5. Kotlin<br>
+                                6. PHP
+                            </div>
+                            <div style="text-align: left">
+                                7. C#<br>
+                                8. Swift<br>
+                                9. R
+                            </div>
+                            <div style="text-align: left">
+                                10. Ruby<br>
+                                11. C and C++<br>
+                                12. Matlab
+                            </div>
+                            <div style="text-align: left">
+                                13. TypeScript<br>
+                                14. Scala
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Principles & Coding Guidelines</h3>
+
+                </section>
+            </section>
+            <section id="diy">
+                <section>
+                    <h2>Do it Yourself</h2>
+                </section>
+                <section id="hackathon">
+                    <h3>Hackathon</h3>
+                    <div class="container w-100" style="text-align: left;">
+                        <div class="row my-2">
+                            <div class="col">
+                                Vorraussetzungen
+                            </div>
+                            <div class="col-6 fs-3">
+                                <a href="https://stackoverflow.com" target="_blank">stackoverflow</a>, ansonsten keine
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col">
+                                Challenge
+                            </div>
+                            <div class="col-6 fs-3">
+                                Arbeitet im Team an einem REST-Backend. Dieses soll unterschiedliche Datentypen und
+                                deren Inhalte wiedergeben können
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col">
+                                Zeit
+                            </div>
+                            <div class="col-6 fs-3">
+                                1 Stunde. Wir treffen uns dann gemeinsam um die Ergebnisse zu präsentieren
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col">
+                                Links
+                            </div>
+                            <div class="col-6 fs-3">
+                                <div class="d-flex justify-content-around align-items-center">
+                                    <div>
+                                        <a href="#diy">Team 1</a>
+                                    </div>
+                                    <div>
+                                        <a href="#diy">Team 2</a>
+                                    </div>
+                                    <div>
+                                        <a href="#diy">Team 3</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="tips">
+                    <h3>Tips & Tricks</h3>
+                    <div class="r-vstack w-100">
+                        <div class="container">
+                            <div class="fs-4" style="text-align: left;">
+                                Repository klonen
+                            </div>
+                            <pre><code class="bash" data-noescape data-trim>
+$ git clone https://github.com/infologistix/teamX
+                            </code></pre>
+                        </div>
+                        <div class="container">
+                            <div class="fs-4" style="text-align: left;">
+                                Ordner wechseln
+                            </div>
+                            <pre><code class="bash" data-noescape data-trim>
+$ cd /pfad/zum/ordner # absolut
+$ cd pfad/zum/ordner # relativ
+                            </code></pre>
+                        </div>
+                        <div class="container">
+                            <div class="fs-4" style="text-align: left;">
+                                Go-Anwendung ausführen
+                            </div>
+                            <pre><code class="bash" data-noescape data-trim>
+$ go run cmd/*
+                            </code></pre>
+                        </div>
+                        <div class="container">
+                            <div class="fs-4" style="text-align: left;">
+                                Eigene Dateien commiten und pushen
+                            </div>
+                            <pre><code class="bash" data-noescape data-trim>
+$ git add [datei]
+$ git commit -m "[datei] hinzugefügt"
+$ git push 
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+    <script>
+        // Full list of configuration options:
+        // https://revealjs.revealjs.com/config/
+        Reveal.initialize({
+            center: true,
+            controlsTutorial: false,
+            margin: 0.10,
+            transition: 'none',
+            slideNumber: true,
+            plugins: [RevealNotes, RevealHighlight],
+        });
+    </script>
+
+</body>
+
+</html>
