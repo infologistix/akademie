@@ -25,7 +25,7 @@
                     Shhh, these are your private notes 📝
                 </aside>
             </section>
-            <section id="work">
+            <section id="content">
                 <h3 style="top: 0;">Inhalt</h3>
                 <div class="r-stretch">
                     <div class="d-flex flex-column justify-content-around w-100 h-100">
@@ -68,7 +68,7 @@
                                 <div class="mx-5">Principals</div>
                                 <div class="mx-5">Design Guidelines</div>
                             </div>
-                        </div> 
+                        </div>
                         <div class="fragment">
                             <a href="#diy">
                                 <div style="text-align: left;">
@@ -92,81 +92,145 @@
                     <h3>Allgemeines</h3>
                     <div style="text-align: left">
                         <p>
-                            Source Control Management = <br>
-                            Management des Quellcodes / Versionsverwaltung
+                            Source Control Management = Versionsverwaltung
                         </p>
                         <p>
-                            Normierter Vorgang des Archivieren/Speichern von Quellcode
+                            Normierter Vorgang des Archivieren/Speichern von Quellcode [nichtproprietäre Dateien]
                         </p>
-                        <p>
-                            Aufteilung in:
-                            <ul>
-                                <li>Repositories</li>
-                                <li>Branches</li>
-                                <li>Commits</li>
-                                <li>Tags</li>
-                            </ul><br>
-                            Dabei gilt: Top-Down Mechanismus
-                        </p>
+                        <p>Aufteilung in:</p>
+                        <div class="fs-2 container w-100">
+                            <div class="row">
+                                <div class="col">Repositories</div>
+                                <div class="col">Verwaltetes Digitales Archiv</div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col">Branches</div>
+                                <div class="col">Neuerung unabhängig gestalten</div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col">Commit</div>
+                                <div class="col">Änderungen kenntlich machen</div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col">Tag</div>
+                                <div class="col">Festmachen eins Standes auf einen definierten Punkt</div>
+                            </div>
+                        </div>
                     </div>
                 </section>
-                <section>
+                <section id="tools">
                     <h3>Anbieter</h3>
-                    <div class="r-hstack r-stretch">
-                        <div class="m-2 bg-secondary p-5 h-100" style="text-align: left">
-                            <img style="width:100%"
+                    <div class="container h-100" style="text-align: right;">
+                        <div class="my-2 row w-100 bg-secondary ">
+                            <img style="height: 10vh; width: auto;"
                                 src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Emblem.png">
-                            Microsoft<br>
-                            <hr>2008<br>
-                            <hr>Populärster Wettbewerber
+                            <div class="col m-2 fs-3">
+                                <ul style="list-style: none; text-align: right;">
+                                    <li>Microsoft</li>
+                                    <li>2008</li>
+                                    <li>Populärster Online Dienst</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="m-2 bg-secondary p-5 h-100" style="text-align: left">
-                            <img style="width:100%"
+                        <div class="my-2 row w-100 bg-secondary ">
+                            <img style="height: 10vh; width: auto;"
                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/GitLab_logo.svg/2560px-GitLab_logo.svg.png">
-                            GitLab Inc.<br>
-                            <hr>2012<br>
-                            <hr>Open Source
+                            <div class="col m-2 fs-3">
+                                <ul style="list-style: none; text-align: right;">
+                                    <li>GitLab Inc.</li>
+                                    <li>2012</li>
+                                    <li>Open Source Dienst</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="m-2 bg-secondary p-5 h-100" style="text-align: left">
-                            <img style="width:100%"
+                        <div class="my-2 row w-100 bg-secondary ">
+                            <img style="height: 10vh; width: auto;"
                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Logo_gitee_light.svg/2560px-Logo_gitee_light.svg.png">
-                            AOSI-Network<br>
-                            <hr>Markt: China
+                            <div class="col m-2 fs-3">
+                                <ul style="list-style: none; text-align: right;">
+                                    <li>Aosi Network</li>
+                                    <li>GitHub-Klon</li>
+                                    <li>Markt: China</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="m-2 bg-secondary p-5 h-100" style="text-align: left">
-                            <img style="width:100%"
+                        <div class="my-2 row w-100 bg-secondary ">
+                            <img style="height: 10vh; width: auto;"
                                 src="https://download.logo.wine/logo/Bitbucket/Bitbucket-Logo.wine.png">
-                            Atlassian<br>
-                            <hr>2008<br>
-                            <hr>Für Unternehmen
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    GitHub Account und Berechtigungen
-                    <div class="r-hstack">
-                        <div>Some Picture</div>
-                        <div class="card">
-                            <div class="card-body text-dark">
-                                <ul>
-                                    <li>Jeder Nutzer ist auf alle Projekte Schreibberechtigt</li>
-                                    <li>Maintenance erfolgt über den Ersteller eines Repositories</li>
-                                    <li>be aware: Mit dem Link zur infologistix ist euer Konto mit dem offiziellen
-                                        infolgoistix Accoutn verknüpft</li>
+                            <div class="col m-2 fs-3">
+                                <ul style="list-style: none; text-align: right;">
+                                    <li>Atlassian</li>
+                                    <li>2008</li>
+                                    <li>an Unternehmen ausgerichtet</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section>
+                    <h3>GitHub Account und Berechtigungen</h3>
+                    <div class="r-stretch">
+                        <a href="https://github.com/infologistix" target="_blank"><img src="./assets/github.png"></a>
+                        <div>
+                            Jedes infologistix-Member besitzt Lese/Schreibrechte<br>-> Genaue Verfolgung möglich
+                        </div>
+                    </div>
+                </section>
+                <section>
                     <h3>Beispielprojekte</h3>
-                    <ul>
-                        <li>Docker Build Pipeline</li>
-                        <li>WebCrawler</li>
-                        <li>TDWI-Image-Engine</li>
-                        <li>FC Bayern München</li>
-                        <li>BIKK-Übungen</li>
-                    </ul>
+                    <div class="d-flex h-100 w-100 flex-column">
+                        <div class="fragment">
+                            <div class="d-flex justify-content-between">
+                                <div>Docker Build Pipline</div>
+                                <a href="https://github.com/infologistix/docker-selenium-python"
+                                    target="_blank">&rarr;GitHub</a>
+                            </div>
+                        </div>
+                        <div class="fragment">
+                            <div class="d-flex justify-content-between">
+                                <div>WebCrawler</div>
+                                <a href="https://github.com/infologistix/webcrawlers" target="_blank">&rarr;GitHub</a>
+                            </div>
+                        </div>
+                        <div class="fragment">
+                            <div class="d-flex justify-content-between">
+                                <div>Relux</div>
+                                <a href="https://github.com/infologistix/relux-optimize"
+                                    target="_blank">&rarr;GitHub</a>
+                            </div>
+                        </div>
+                        <div class="fragment">
+                            <div class="d-flex justify-content-between">
+                                <div>TDWI-Image-Engine</div>
+                                <a href="https://github.com/infologistix/tdwi_showcase2022"
+                                    target="_blank">&rarr;GitHub</a>
+                            </div>
+                        </div>
+                        <div class="fragment">
+                            <div class="d-flex justify-content-between">
+                                <div>FC Bayern München</div>
+                                <a href="https://github.com/infologistix/sportsanalytics"
+                                    target="_blank">&rarr;GitHub</a>
+                            </div>
+                        </div>
+                        <div class="fragment">
+                            <div class="d-flex justify-content-between">
+                                <div>BIKK-Übungen</div>
+                                <a href="https://github.com/infologistix/bi-compact-course"
+                                    target="_blank">&rarr;GitHub</a>
+                            </div>
+                        </div>
+                        <div class="fragment">
+                            <div class="d-flex justify-content-between">
+                                <div>Test-Data-Engine</div>
+                                <a href="https://github.com/infologistix/test-data-engine"
+                                    target="_blank">&rarr;GitHub</a>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section>
                     <h3>GIT Commands</h3>
@@ -376,9 +440,36 @@ $ git switch branchName
                         </div>
                     </div>
                 </section>
-                <section>
+                <section id="work">
                     <h3>Principles & Coding Guidelines</h3>
-
+                    <div class="r-stretch r-hstack">
+                        <img style="width:75vw" src="./assets/spaghetti.png">
+                        <div style="margin-left: 15px; text-align: left;">
+                            Software Architektur
+                            <div class="fs-4">
+                                <ul>
+                                    <li>Beschreibt das generelle Vorgehen und Umsetzung eines Konzeptes am Reißbrett
+                                    </li>
+                                    <li>Es wird das gesamte Konzept basierend auf Pattern in UML und Text erarbeitet.
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr>
+                            Design Guidelines
+                            <div class="fs-4">
+                                <ul>
+                                    <li>Sprachenorientierte Richtlinien</li>
+                                    <li>Vorgaben für
+                                        <ul>
+                                            <li>Objekte</li>
+                                            <li>Funktionen</li>
+                                            <li>Dokumentation</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </section>
             <section id="diy">
@@ -393,9 +484,10 @@ $ git switch branchName
                                 Vorraussetzungen
                             </div>
                             <div class="col-6 fs-3">
-                                <a href="https://stackoverflow.com" target="_blank">stackoverflow</a>, ansonsten keine
+                                <a href="https://stackoverflow.com" target="_blank">stackoverflow</a> + installierte GO/Git Umgebung
                             </div>
                         </div>
+                        <hr>
                         <div class="row my-2">
                             <div class="col">
                                 Challenge
@@ -405,6 +497,7 @@ $ git switch branchName
                                 deren Inhalte wiedergeben können
                             </div>
                         </div>
+                        <hr>
                         <div class="row my-2">
                             <div class="col">
                                 Zeit
@@ -413,12 +506,13 @@ $ git switch branchName
                                 1 Stunde. Wir treffen uns dann gemeinsam um die Ergebnisse zu präsentieren
                             </div>
                         </div>
+                        <hr>
                         <div class="row my-2">
                             <div class="col">
                                 Links
                             </div>
                             <div class="col-6 fs-3">
-                                <div class="d-flex justify-content-around align-items-center">
+                                <div class="d-flex justify-content-around align-items-bottom">
                                     <div>
                                         <a href="#diy">Team 1</a>
                                     </div>
@@ -493,7 +587,27 @@ $ git push
             transition: 'none',
             slideNumber: true,
             plugins: [RevealNotes, RevealHighlight],
+            multiplex: {
+                secret: null,
+                id: '37f58c18c6c3486a',
+                url: 'https://reveal-multiplex.glitch.me/',
+            },
+            dependencies: [{
+                    src: 'https://reveal-multiplex.glitch.me/socket.io/socket.io.js',
+                    async: true
+                },
+                {
+                    src: 'https://reveal-multiplex.glitch.me/client.js',
+                    async: true
+                },
+            ]
         });
+        const collapse = new bootstrap.Collapse('#clone');
+        Reveal.on('slidechanged', event => {
+            if (event['indexh'] == 2 && event['indexv'] == 5) {
+                collapse.show();
+            }
+        })
     </script>
 
 </body>
