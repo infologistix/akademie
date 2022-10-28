@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./dist/theme/infologistix.css" id="theme">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -479,6 +480,37 @@ $ git switch branchName
             <section id="diy">
                 <section>
                     <h2>Do it Yourself</h2>
+                </section>
+                <section id="handy">
+                    <h3>Nützliche Infos</h3>
+                    <div class="r-vstack w-100">
+                        <div class="card w-100 m-2 fragment" style="background-color: #79a7b5;">
+                            <div class="card-header">
+                                Visual Studio Code
+                            </div>
+                            <div class="card-text fs-4 mb-2" style="text-align: left">
+                                <ul class="mx-5">
+                                    <li class="fragment">In der Menüleiste lässt sich ein Terminal direkt öffnen. <br>(<i class="fa fa-windows" aria-hidden="true"></i> [STRG+SHIFT+Ö] | <i class="fa fa-apple" aria-hidden="true"></i> [CTRL+SHIFT+`])</li>
+                                    <li class="fragment">Die Erweiterungen GO, GitLens sind sehr empfehlenswert</li>
+                                    <li class="fragment">GitLens vereinfacht die Arbeit mit GitHub extrem</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card w-100 m-2 fragment" style="background-color: #79a7b5;">
+                            <div class="card-header">
+                                Git Konfiguration
+                            </div>
+                            <div class="card-text fs-4 mb-2" style="text-align: left">
+                                <pre><code class="bash" data-noescape data-trim style="background-color: #3b4148;">
+$ git config --global user.email "you@example.com"
+$ git config --global user.name "your name"
+                                </code></pre>
+                                <div class="mx-5">
+                                    Damit lässt sich vorneweg festlegen, dass es auch wirklich ihr seid, die autorisiert sind, etwas in das Remote Repository zu commiten
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section id="hackathon">
                     <h3>Hackathon</h3>
