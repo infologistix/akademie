@@ -12,20 +12,27 @@
     <link rel="stylesheet" href="./dist/theme/infologistix.css" id="theme">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="reveal">
         <div class="slides">
             <section>
-                <h3 class="r-fit-text">Freitags-Akademie</h3>
+                <h3 class="r-fit-text">Freitags-Akademie-Follow-Up</h3>
                 <h3>Software Development</h3>
                 <p><a href="https://infologistix.de" target="_blank">@infologistix</a></p>
                 <aside class="notes">
                     Shhh, these are your private notes 📝
                 </aside>
             </section>
-            <section id="work">
+            <section>
+                <h3>Plan</h3>
+                <div>
+                    <img src="./assets/plan.jpeg">
+                </div>
+            </section>
+            <section id="content">
                 <h3 style="top: 0;">Inhalt</h3>
                 <div class="r-stretch">
                     <div class="d-flex flex-column justify-content-around w-100 h-100">
@@ -38,6 +45,7 @@
                             <hr>
                             <div class="d-flex justify-content-end fs-5">
                                 <div class="mx-5">GitHub</div>
+                                <div class="mx-5">READMEs</div>
                                 <div class="mx-5">Account & Berechtigungen</div>
                                 <div class="mx-5">GIT Commands</div>
                             </div>
@@ -68,7 +76,7 @@
                                 <div class="mx-5">Principals</div>
                                 <div class="mx-5">Design Guidelines</div>
                             </div>
-                        </div> 
+                        </div>
                         <div class="fragment">
                             <a href="#diy">
                                 <div style="text-align: left;">
@@ -91,85 +99,118 @@
                 <section>
                     <h3>Allgemeines</h3>
                     <div style="text-align: left">
-                        <p>
-                            Source Control Management = <br>
-                            Management des Quellcodes / Versionsverwaltung
+                        <p class="fragment" data-fragment-index="1">
+                            Source Control Management = Versionsverwaltung
                         </p>
-                        <p>
-                            Normierter Vorgang des Archivieren/Speichern von Quellcode
+                        <p class="fragment" data-fragment-index="2">
+                            Normierter Vorgang des Archivieren/Speichern von Quellcode [nichtproprietäre Dateien]
                         </p>
-                        <p>
-                            Aufteilung in:
-                            <ul>
-                                <li>Repositories</li>
-                                <li>Branches</li>
-                                <li>Commits</li>
-                                <li>Tags</li>
-                            </ul><br>
-                            Dabei gilt: Top-Down Mechanismus
-                        </p>
-                    </div>
-                </section>
-                <section>
-                    <h3>Anbieter</h3>
-                    <div class="r-hstack r-stretch">
-                        <div class="m-2 bg-secondary p-5 h-100" style="text-align: left">
-                            <img style="width:100%"
-                                src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Emblem.png">
-                            Microsoft<br>
-                            <hr>2008<br>
-                            <hr>Populärster Wettbewerber
-                        </div>
-                        <div class="m-2 bg-secondary p-5 h-100" style="text-align: left">
-                            <img style="width:100%"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/GitLab_logo.svg/2560px-GitLab_logo.svg.png">
-                            GitLab Inc.<br>
-                            <hr>2012<br>
-                            <hr>Open Source
-                        </div>
-                        <div class="m-2 bg-secondary p-5 h-100" style="text-align: left">
-                            <img style="width:100%"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Logo_gitee_light.svg/2560px-Logo_gitee_light.svg.png">
-                            AOSI-Network<br>
-                            <hr>Markt: China
-                        </div>
-                        <div class="m-2 bg-secondary p-5 h-100" style="text-align: left">
-                            <img style="width:100%"
-                                src="https://download.logo.wine/logo/Bitbucket/Bitbucket-Logo.wine.png">
-                            Atlassian<br>
-                            <hr>2008<br>
-                            <hr>Für Unternehmen
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    GitHub Account und Berechtigungen
-                    <div class="r-hstack">
-                        <div>Some Picture</div>
-                        <div class="card">
-                            <div class="card-body text-dark">
-                                <ul>
-                                    <li>Jeder Nutzer ist auf alle Projekte Schreibberechtigt</li>
-                                    <li>Maintenance erfolgt über den Ersteller eines Repositories</li>
-                                    <li>be aware: Mit dem Link zur infologistix ist euer Konto mit dem offiziellen
-                                        infolgoistix Accoutn verknüpft</li>
-                                </ul>
+                        <p class="fragment" data-fragment-index="3">Aufteilung in:</p>
+                        <div class="fs-2 container w-100">
+                            <div class="row fragment" data-fragment-index="3">
+                                <div class="col">Repositories</div>
+                                <div class="col">Verwaltetes Digitales Archiv</div>
                             </div>
+                            <hr class="fragment" data-fragment-index="4">
+                            <div class="row fragment" data-fragment-index="4">
+                                <div class="col">Branches</div>
+                                <div class="col">Neuerung unabhängig gestalten</div>
+                            </div>
+                            <hr class="fragment" data-fragment-index="5">
+                            <div class="row fragment" data-fragment-index="5">
+                                <div class="col">Commit</div>
+                                <div class="col">Änderungen kenntlich machen</div>
+                            </div>
+                            <hr class="fragment" data-fragment-index="6">
+                            <div class="row fragment" data-fragment-index="6">
+                                <div class="col">Tag</div>
+                                <div class="col">Festmachen eins Standes auf einen definierten Punkt</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="readme">
+                    <h3>READMEs</h3>
+                    <div style="text-align: left">
+                        <p class="fragment" data-fragment-index="1">Ein README ist häufig das erste, was ein Besucher eines Repositories sieht. Hiermit können wichtige Informationen zum Projekt kommuniziert werden:</p>
+                        <div class="fs-2 container w-100">
+                            <ul class="fragment" data-fragment-index="2">
+                                <li class="fragment" data-fragment-index="2">Funktionsweise des Projekts</li>
+                                <li class="fragment" data-fragment-index="3">Warum das Projekt nützlich ist</li>
+                                <li class="fragment" data-fragment-index="4">Wie mit dem Projekt begonnen werden kann</li>
+                                <li class="fragment" data-fragment-index="5">Wo es Hilfe zum Projekt gibt</li>
+                                <li class="fragment" data-fragment-index="6">Wer für das Projekt verantwortlich ist</li>
+                            </ul>
+                        </div>
+                        <p class="fragment" data-fragment-index="7">Wird überlicherweise als Markdown File "Readme.md" abgelegt</p>
+                        <p class="fragment" data-fragment-index="7"> <small><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Weiterführende Infos</a></small></p>
+                    </div>
+                </section>
+                <section>
+                    <h3>GitHub Account und Berechtigungen</h3>
+                    <div class="r-stretch">
+                        <a href="https://github.com/infologistix" target="_blank"><img src="./assets/github.png"></a>
+                        <div class="fragment">
+                            Jedes infologistix-<a href="https://github.com/infologistix" target="_blank">Member</a>
+                            besitzt Lese/Schreibrechte<br>-> Genaue Verfolgung möglich
                         </div>
                     </div>
                 </section>
                 <section>
                     <h3>Beispielprojekte</h3>
-                    <ul>
-                        <li>Docker Build Pipeline</li>
-                        <li>WebCrawler</li>
-                        <li>TDWI-Image-Engine</li>
-                        <li>FC Bayern München</li>
-                        <li>BIKK-Übungen</li>
-                    </ul>
+                    <div class="d-flex h-100 w-100 flex-column">
+                        <div class="fragment">
+                            <div class="d-flex justify-content-between">
+                                <div>Docker Build Pipline</div>
+                                <a href="https://github.com/infologistix/docker-selenium-python"
+                                    target="_blank">&rarr;GitHub</a>
+                            </div>
+                        </div>
+                        <div class="fragment">
+                            <div class="d-flex justify-content-between">
+                                <div>WebCrawler</div>
+                                <a href="https://github.com/infologistix/webcrawlers" target="_blank">&rarr;GitHub</a>
+                            </div>
+                        </div>
+                        <div class="fragment">
+                            <div class="d-flex justify-content-between">
+                                <div>Relux</div>
+                                <a href="https://github.com/infologistix/relux-optimize"
+                                    target="_blank">&rarr;GitHub</a>
+                            </div>
+                        </div>
+                        <div class="fragment">
+                            <div class="d-flex justify-content-between">
+                                <div>TDWI-Image-Engine</div>
+                                <a href="https://github.com/infologistix/tdwi_showcase2022"
+                                    target="_blank">&rarr;GitHub</a>
+                            </div>
+                        </div>
+                        <div class="fragment">
+                            <div class="d-flex justify-content-between">
+                                <div>FC Bayern München</div>
+                                <a href="https://github.com/infologistix/sportsanalytics"
+                                    target="_blank">&rarr;GitHub</a>
+                            </div>
+                        </div>
+                        <div class="fragment">
+                            <div class="d-flex justify-content-between">
+                                <div>BIKK-Übungen</div>
+                                <a href="https://github.com/infologistix/bi-compact-course"
+                                    target="_blank">&rarr;GitHub</a>
+                            </div>
+                        </div>
+                        <div class="fragment">
+                            <div class="d-flex justify-content-between">
+                                <div>Test-Data-Engine</div>
+                                <a href="https://github.com/infologistix/test-data-engine"
+                                    target="_blank">&rarr;GitHub</a>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <section>
-                    <h3>GIT Commands</h3>
+                <section id="cheatsheet">
+                    <h3>GIT Cheat Sheet</h3>
                     <div class="r-vstack r-stretch p-2">
                         <div class="r-hstack">
                             <button class="btn btn-dark m-2" type="button" data-bs-toggle="collapse"
@@ -207,7 +248,7 @@
                         </div>
                         <div class="r-stack mt-5 w-100" id="collapseItems">
                             <div class="collapse w-100" id="clone" data-bs-parent="#collapseItems">
-                                <div class="card card-body text-black">
+                                <div class="card shadow-lg border-light card-body" style="background-color: #3b4148;">
                                     <pre class="bash"><code data-trim data-noescape>
 $ git clone repository-url [folder]
                                         </code></pre>
@@ -216,7 +257,7 @@ $ git clone repository-url [folder]
                                 </div>
                             </div>
                             <div class="collapse" id="pull" data-bs-parent="#collapseItems">
-                                <div class="card card-body text-black">
+                                <div class="card shadow-lg border-light card-body" style="background-color: #3b4148;">
                                     <pre class="bash"><code data-trim data-noescape>
 $ git pull
 $ git push
@@ -227,7 +268,7 @@ $ git push
                                 </div>
                             </div>
                             <div class="collapse" id="fetch" data-bs-parent="#collapseItems">
-                                <div class="card card-body text-black">
+                                <div class="card shadow-lg border-light card-body" style="background-color: #3b4148;">
                                     <pre class="bash"><code data-trim data-noescape>
 $ git fetch
                                         </code></pre>
@@ -236,7 +277,7 @@ $ git fetch
                                 </div>
                             </div>
                             <div class="collapse" id="add" data-bs-parent="#collapseItems">
-                                <div class="card card-body text-black">
+                                <div class="card shadow-lg border-light card-body" style="background-color: #3b4148;">
                                     <pre class="bash"><code data-trim data-noescape>
 $ git add [file/folder]
 $ git add ./source
@@ -245,7 +286,7 @@ $ git add ./source
                                 </div>
                             </div>
                             <div class="collapse" id="commit" data-bs-parent="#collapseItems">
-                                <div class="card card-body text-black">
+                                <div class="card shadow-lg border-light card-body" style="background-color: #3b4148;">
                                     <pre class="bash"><code data-trim data-noescape>
 $ git commit -m "commit-message"
                                         </code></pre>
@@ -254,7 +295,7 @@ $ git commit -m "commit-message"
                                 </div>
                             </div>
                             <div class="collapse" id="branch" data-bs-parent="#collapseItems">
-                                <div class="card card-body text-black">
+                                <div class="card shadow-lg border-light card-body" style="background-color: #3b4148;">
                                     <pre class="bash"><code data-trim data-noescape>
 $ git branch
 $ git branch -c feature/newFeature
@@ -264,7 +305,7 @@ $ git branch -c feature/newFeature
                                 </div>
                             </div>
                             <div class="collapse" id="init" data-bs-parent="#collapseItems">
-                                <div class="card card-body text-black">
+                                <div class="card shadow-lg border-light card-body" style="background-color: #3b4148;">
                                     <pre class="bash"><code data-trim data-noescape>
 $ git init 
                                         </code></pre>
@@ -272,7 +313,7 @@ $ git init
                                 </div>
                             </div>
                             <div class="collapse" id="switch" data-bs-parent="#collapseItems">
-                                <div class="card card-body text-black">
+                                <div class="card shadow-lg border-light card-body" style="background-color: #3b4148;">
                                     <pre class="bash"><code data-trim data-noescape>
 $ git switch branchName
                                         </code></pre>
@@ -304,9 +345,22 @@ $ git switch branchName
                     <h3>VsCode Quickview</h3>
                     <p>Top Used Extensions</p>
                     <img src="assets/extensions.png" alt="VSCode" class="r-stretch">
-                    <div>
+                    <div class="fragment">
                         Weitere sind u.a.: GO, Docker, Kubernetes, RedHat-YAML, MSSQL, Angular, Vue.js, ...
                     </div>
+                </section>
+                <section id="demo">
+                    <h3>VS Code Demo</h3>
+                    <p class="r-frame">
+                        <ul>
+                            <li>Allgemeine Übersicht</li>
+                            <li>Commit - Push</li>
+                            <li>Merge Conflicte</li>
+                        </ul>
+                    </p>
+                    <aside class="notes">
+                        Hier in VsCode in team1 in 'handler.go' die Zeile mit infologistix abändern. Die wird in einem zukünftigen Commit verändert sein... 
+                    </aside>
                 </section>
             </section>
             <section id="software">
@@ -316,27 +370,27 @@ $ git switch branchName
                 <section>
                     <h3>Konzepte</h3>
                     <div class="r-vstack w-100">
-                        <div class="card bg-secondary w-100 m-2">
+                        <div class="card w-100 m-2 fragment" style="background-color: #79a7b5;">
                             <div class="card-header">
                                 Data Based Software
                             </div>
-                            <div class="card-text fs-4" style="text-align: left">
+                            <div class="card-text fs-4 mb-2" style="text-align: left">
                                 <ul>
-                                    <li>Micro-ETL Services (SQL-Frameworks)</li>
-                                    <li>Web-Dashboarding</li>
-                                    <li>Plugin-Development für Data Suites</li>
+                                    <li class="fragment">Micro-ETL Services (SQL-Frameworks)</li>
+                                    <li class="fragment">Web-Dashboarding</li>
+                                    <li class="fragment">Plugin-Development für Data Suites</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="card bg-secondary w-100 m-2">
+                        <div class="card w-100 m-2 fragment" style="background-color: #79a7b5;">
                             <div class="card-header">
                                 Cloud-Integration & Cloud-Perfomance
                             </div>
-                            <div class="card-text fs-4" style="text-align: left">
+                            <div class="card-text fs-4 mb-2" style="text-align: left">
                                 <ul>
-                                    <li>Containerisierte Anwendungen</li>
-                                    <li>Cloud-Native Untersützung von bestehenden Anwendungen</li>
-                                    <li>Frameworks für Small Data (z.B. IoT-Stack)</li>
+                                    <li class="fragment">Containerisierte Anwendungen</li>
+                                    <li class="fragment">Cloud-Native Untersützung von bestehenden Anwendungen</li>
+                                    <li class="fragment">Frameworks für Small Data (z.B. IoT-Stack)</li>
                                 </ul>
                             </div>
                         </div>
@@ -344,59 +398,127 @@ $ git switch branchName
                 </section>
                 <section>
                     <h3>Sprachen</h3>
-                    <img src="https://miro.medium.com/max/820/0*oyD7ekV-hMU91h4J.png" clas="r-stretch">
-                    <div class="fs-4">
+                    <img src="https://miro.medium.com/max/820/0*oyD7ekV-hMU91h4J.png" class="fragment">
+                    <div class="fs-4 fragment fade-up">
                         Best to learn 2023
                         <hr>
                         <div class="d-flex w-100 justify-content-between">
-                            <div style="text-align: left">
+                            <div class="fragment fade-up" style="text-align: left">
                                 1. Javascript <br>
                                 2. Python <br>
                                 3. Go
                             </div>
-                            <div style="text-align: left">
+                            <div class="fragment fade-up" style="text-align: left">
                                 4. Java<br>
                                 5. Kotlin<br>
                                 6. PHP
                             </div>
-                            <div style="text-align: left">
+                            <div class="fragment fade-up" style="text-align: left">
                                 7. C#<br>
                                 8. Swift<br>
                                 9. R
                             </div>
-                            <div style="text-align: left">
+                            <div class="fragment fade-up" style="text-align: left">
                                 10. Ruby<br>
                                 11. C and C++<br>
                                 12. Matlab
                             </div>
-                            <div style="text-align: left">
+                            <div class="fragment fade-up" style="text-align: left">
                                 13. TypeScript<br>
                                 14. Scala
                             </div>
                         </div>
                     </div>
                 </section>
-                <section>
+                <section id="pattern">
                     <h3>Principles & Coding Guidelines</h3>
-
+                    <div class="r-stretch r-hstack">
+                        <img style="width:75vw" src="./assets/spaghetti.png" class="fragment">
+                        <div style="margin-left: 15px; text-align: left;" class="fragment">
+                            Software Architektur
+                            <div class="fs-4 fragment">
+                                <ul>
+                                    <li>Beschreibt das generelle Vorgehen und Umsetzung eines Konzeptes am Reißbrett
+                                    </li>
+                                    <li>Es wird das gesamte Konzept basierend auf Pattern in UML und Text erarbeitet.
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr>
+                            Design Guidelines
+                            <div class="fs-4 fragment">
+                                <ul>
+                                    <li>Sprachenorientierte Richtlinien</li>
+                                    <li>Vorgaben für
+                                        <ul>
+                                            <li>Objekte</li>
+                                            <li>Funktionen</li>
+                                            <li>Dokumentation</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="work">
+                    <h3>Beispiel: Cloud Software</h3>
+                    <img class="r-stretch" src="./assets/pizza1.png">
                 </section>
             </section>
             <section id="diy">
                 <section>
                     <h2>Do it Yourself</h2>
                 </section>
+                <section id="handy">
+                    <h3>Nützliche Infos</h3>
+                    <div class="r-vstack w-100">
+                        <div class="card w-100 m-2 fragment" style="background-color: #79a7b5;">
+                            <div class="card-header">
+                                Visual Studio Code
+                            </div>
+                            <div class="card-text fs-4 mb-2" style="text-align: left">
+                                <ul class="mx-5">
+                                    <li class="fragment">In der Menüleiste lässt sich ein Terminal direkt öffnen.
+                                        <br>(<i class="fa fa-windows" aria-hidden="true"></i> [STRG+SHIFT+Ö] | <i
+                                            class="fa fa-apple" aria-hidden="true"></i> [CTRL+SHIFT+`])</li>
+                                    <li class="fragment">Die Erweiterungen GO, GitLens sind sehr empfehlenswert 
+                                        <br>(<i class="fa fa-windows" aria-hidden="true"></i> [STRG+SHIFT+X])</li>
+                                    <li class="fragment">GitLens vereinfacht die Arbeit mit GitHub extrem</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card w-100 m-2 fragment" style="background-color: #79a7b5;">
+                            <div class="card-header">
+                                Git Konfiguration
+                            </div>
+                            <div class="card-text fs-4 mb-2" style="text-align: left">
+                                <pre><code class="bash" data-noescape data-trim style="background-color: #3b4148;">
+$ git config --global user.email "you@example.com"
+$ git config --global user.name "your name"
+                                </code></pre>
+                                <div class="mx-5">
+                                    Damit lässt sich vorneweg festlegen, dass es auch wirklich ihr seid, die autorisiert
+                                    sind, etwas in das Remote Repository zu commiten
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section id="hackathon">
                     <h3>Hackathon</h3>
                     <div class="container w-100" style="text-align: left;">
-                        <div class="row my-2">
+                        <div class="row my-2 fragment" data-fragment-index="1">
                             <div class="col">
                                 Vorraussetzungen
                             </div>
                             <div class="col-6 fs-3">
-                                <a href="https://stackoverflow.com" target="_blank">stackoverflow</a>, ansonsten keine
+                                <a href="https://stackoverflow.com" target="_blank">stackoverflow</a> + installierte
+                                GO/Git Umgebung
                             </div>
                         </div>
-                        <div class="row my-2">
+                        <hr class="fragment" data-fragment-index="2">
+                        <div class="row my-2 fragment" data-fragment-index="2">
                             <div class="col">
                                 Challenge
                             </div>
@@ -405,7 +527,8 @@ $ git switch branchName
                                 deren Inhalte wiedergeben können
                             </div>
                         </div>
-                        <div class="row my-2">
+                        <hr class="fragment" data-fragment-index="3">
+                        <div class="row my-2 fragment" data-fragment-index="3">
                             <div class="col">
                                 Zeit
                             </div>
@@ -413,20 +536,28 @@ $ git switch branchName
                                 1 Stunde. Wir treffen uns dann gemeinsam um die Ergebnisse zu präsentieren
                             </div>
                         </div>
-                        <div class="row my-2">
+                        <hr class="fragment" data-fragment-index="4">
+                        <div class="row my-2 fragment" data-fragment-index="4">
                             <div class="col">
                                 Links
                             </div>
                             <div class="col-6 fs-3">
-                                <div class="d-flex justify-content-around align-items-center">
+                                <div class="d-flex justify-content-around align-items-bottom">
                                     <div>
-                                        <a href="#diy">Team 1</a>
+                                        <a href="https://github.com/infologistix/akademie-go1" target="_blank">Team
+                                            1</a>
                                     </div>
                                     <div>
-                                        <a href="#diy">Team 2</a>
+                                        <a href="https://github.com/infologistix/akademie-go2" target="_blank">Team
+                                            2</a>
                                     </div>
                                     <div>
-                                        <a href="#diy">Team 3</a>
+                                        <a href="https://github.com/infologistix/akademie-go3" target="_blank">Team
+                                            3</a>
+                                    </div>
+                                    <div>
+                                        <a href="https://github.com/infologistix/akademie-go4" target="_blank">Team
+                                            4</a>
                                     </div>
                                 </div>
                             </div>
@@ -474,6 +605,19 @@ $ git push
                     </div>
                 </section>
             </section>
+            <section id="end">
+                <h3>Danke!</h3>
+                <div class="r-vstack">
+                    <div>
+                        Quellcode zu dieser Präsentation:<br>
+                        <a href="https://github.com/infologistix/akademie/blob/main/software.html"
+                            target="_blank">GitHub</a>
+                    </div>
+                    <div style="bottom: 15px;">
+                        <a href="https://github.com/pickmylight" target="_blank">@pickmylight</a>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
@@ -492,8 +636,34 @@ $ git push
             margin: 0.10,
             transition: 'none',
             slideNumber: true,
+            pdfSeparateFragments: false,
             plugins: [RevealNotes, RevealHighlight],
+            multiplex: {
+                secret: '16668892971569572428',
+                id: '37f58c18c6c3486a',
+                url: 'https://reveal-multiplex.glitch.me/',
+            },
+            dependencies: [{
+                    src: 'https://reveal-multiplex.glitch.me/socket.io/socket.io.js',
+                    async: true
+                },
+                {
+                    src: 'https://reveal-multiplex.glitch.me/master.js',
+                    async: true
+                },
+
+                // and if you want speaker notes
+                //{ src: 'https://unpkg.com/reveal-notes-server/client.js', async: true }
+            ]
         });
+        const collapse = new bootstrap.Collapse('#clone');
+        Reveal.on('slidechanged', event => {
+            console.log(event['indexh']);
+            if (event['indexh'] == 2 && event['indexv'] == 5) {
+                console.log("Found my event");
+                collapse.show();
+            }
+        })
     </script>
 
 </body>
